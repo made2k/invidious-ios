@@ -28,7 +28,7 @@ public struct Channel: ImmutableMappable {
   public let allowedRegions: [String]
 
   public let latestVideos: [VideoPreview]
-  public let relatedChannels: [ChannelPreview]
+  public let relatedChannels: [ChannelSnippet]
 
   public init(map: Map) throws {
     author = try map.value("author")

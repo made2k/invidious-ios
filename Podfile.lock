@@ -35,6 +35,9 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.8.4):
     - PromiseKit/CorePromise
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
   - Version (0.7.0)
 
 DEPENDENCIES:
@@ -43,6 +46,7 @@ DEPENDENCIES:
   - MaterialComponents/Tabs
   - ObjectMapper (~> 3.4)
   - PromiseKit (~> 6.8)
+  - R.swift (~> 5.0)
   - Version (~> 0)
 
 SPEC REPOS:
@@ -53,6 +57,8 @@ SPEC REPOS:
     - MDFInternationalization
     - ObjectMapper
     - PromiseKit
+    - R.swift
+    - R.swift.Library
     - Version
 
 SPEC CHECKSUMS:
@@ -62,8 +68,10 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   Version: 748646b64528b12654498912dc3bd065867169cc
 
-PODFILE CHECKSUM: 80c19263583639a56466d9a5d7494fda0c1d34a8
+PODFILE CHECKSUM: ebc4f7464199ae3a23252273db788a200a6b7cf6
 
 COCOAPODS: 1.6.1

@@ -16,5 +16,6 @@ target 'InvidousApp' do
   use_frameworks!
   
   pod 'MaterialComponents/Tabs'
+  pod 'R.swift', '~> 5.0'
 
 end

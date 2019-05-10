@@ -48,6 +48,7 @@
 		92B2E3A822860B5800D5245C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3A722860B5800D5245C /* Coordinator.swift */; };
 		92B2E3AC22860CF100D5245C /* UIColor+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3AB22860CF100D5245C /* UIColor+YouTube.swift */; };
 		92B2E3AE22860D8A00D5245C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3AD22860D8A00D5245C /* UIColor+Hex.swift */; };
+		92B2E3B32286189100D5245C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3B22286189100D5245C /* R.generated.swift */; };
 		92BF9F6322849D660060CB4F /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF9F6222849D660060CB4F /* VideoPreview.swift */; };
 		92BF9F692284A1260060CB4F /* Invidious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF9F682284A1260060CB4F /* Invidious.swift */; };
 		92BF9F6B2284A24E0060CB4F /* Invidious+Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF9F6A2284A24E0060CB4F /* Invidious+Stats.swift */; };
@@ -139,6 +140,7 @@
 		92B2E3A722860B5800D5245C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		92B2E3AB22860CF100D5245C /* UIColor+YouTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+YouTube.swift"; sourceTree = "<group>"; };
 		92B2E3AD22860D8A00D5245C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		92B2E3B22286189100D5245C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		92BF9F6222849D660060CB4F /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
 		92BF9F682284A1260060CB4F /* Invidious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invidious.swift; sourceTree = "<group>"; };
 		92BF9F6A2284A24E0060CB4F /* Invidious+Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invidious+Stats.swift"; sourceTree = "<group>"; };
@@ -215,14 +217,12 @@
 		9279CD052283B426001D41FA /* InvidousApp */ = {
 			isa = PBXGroup;
 			children = (
+				92B2E3AF2286175900D5245C /* Application */,
 				92B2E3A922860CDD00D5245C /* Extensions */,
 				92B2E3A0228603FC00D5245C /* Flows */,
 				92B2E3A622860B3500D5245C /* Protocols */,
 				9279CD062283B426001D41FA /* AppDelegate.swift */,
 				9279CD082283B426001D41FA /* ViewController.swift */,
-				9279CD0D2283B428001D41FA /* Assets.xcassets */,
-				9279CD0F2283B428001D41FA /* LaunchScreen.storyboard */,
-				9279CD122283B428001D41FA /* Info.plist */,
 			);
 			path = InvidousApp;
 			sourceTree = "<group>";
@@ -366,6 +366,25 @@
 				92B2E3AB22860CF100D5245C /* UIColor+YouTube.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		92B2E3AF2286175900D5245C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				92B2E3B02286176B00D5245C /* Assets */,
+				9279CD122283B428001D41FA /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		92B2E3B02286176B00D5245C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9279CD0D2283B428001D41FA /* Assets.xcassets */,
+				9279CD0F2283B428001D41FA /* LaunchScreen.storyboard */,
+				92B2E3B22286189100D5245C /* R.generated.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		92BF9F672284A10B0060CB4F /* Requests */ = {
@@ -519,6 +538,7 @@
 			buildConfigurationList = 9279CD152283B428001D41FA /* Build configuration list for PBXNativeTarget "InvidousApp" */;
 			buildPhases = (
 				783F037E1109FBB108C5308A /* [CP] Check Pods Manifest.lock */,
+				92B2E3B12286179600D5245C /* Generate Assets */,
 				9279CCFF2283B426001D41FA /* Sources */,
 				9279CD002283B426001D41FA /* Frameworks */,
 				9279CD012283B426001D41FA /* Resources */,
@@ -634,6 +654,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		92B2E3B12286179600D5245C /* Generate Assets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Generate Assets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/InvidousApp/Application/Assets/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/InvidousApp/Application/Assets/R.generated.swift\"\n";
+		};
 		AAD26DA9F4A2CA13162D678B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -667,6 +707,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-InvidousApp/Pods-InvidousApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -679,6 +720,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -700,6 +742,7 @@
 				92B2E3AE22860D8A00D5245C /* UIColor+Hex.swift in Sources */,
 				9279CD092283B426001D41FA /* ViewController.swift in Sources */,
 				92B2E3A522860B3000D5245C /* HomeCoordinator.swift in Sources */,
+				92B2E3B32286189100D5245C /* R.generated.swift in Sources */,
 				92B2E3A822860B5800D5245C /* Coordinator.swift in Sources */,
 				9279CD072283B426001D41FA /* AppDelegate.swift in Sources */,
 				92B2E3A32286049100D5245C /* HomeTabViewController.swift in Sources */,
@@ -904,7 +947,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QEC3K9K4B;
-				INFOPLIST_FILE = InvidousApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InvidousApp/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -923,7 +966,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QEC3K9K4B;
-				INFOPLIST_FILE = InvidousApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/InvidousApp/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

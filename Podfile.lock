@@ -3,6 +3,28 @@ PODS:
   - AlamofireObjectMapper (5.2.0):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - MaterialComponents/AnimationTiming (84.1.1)
+  - MaterialComponents/Ink (84.1.1):
+    - MaterialComponents/private/Math
+  - MaterialComponents/Palettes (84.1.1)
+  - MaterialComponents/private/Application (84.1.1)
+  - MaterialComponents/private/Math (84.1.1)
+  - MaterialComponents/ShadowElevations (84.1.1)
+  - MaterialComponents/ShadowLayer (84.1.1):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/Tabs (84.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Ink
+    - MaterialComponents/Palettes
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/Typography (84.1.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+  - MDFInternationalization (2.0.0)
   - ObjectMapper (3.4.2)
   - PromiseKit (6.8.4):
     - PromiseKit/CorePromise (= 6.8.4)
@@ -18,6 +40,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4)
   - AlamofireObjectMapper (~> 5.2)
+  - MaterialComponents/Tabs
   - ObjectMapper (~> 3.4)
   - PromiseKit (~> 6.8)
   - Version (~> 0)
@@ -26,6 +49,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireObjectMapper
+    - MaterialComponents
+    - MDFInternationalization
     - ObjectMapper
     - PromiseKit
     - Version
@@ -33,10 +58,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  MaterialComponents: 85832ad0a4a7c0113f67330fa135b9702aae7f93
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   Version: 748646b64528b12654498912dc3bd065867169cc
 
-PODFILE CHECKSUM: 56706b4069f45b8fa4a845ccb438eb5a87faae40
+PODFILE CHECKSUM: 80c19263583639a56466d9a5d7494fda0c1d34a8
 
 COCOAPODS: 1.6.1

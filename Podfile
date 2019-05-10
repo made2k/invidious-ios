@@ -14,6 +14,7 @@ end
 
 target 'InvidousApp' do
   use_frameworks!
-
+  
+  pod 'MaterialComponents/Tabs'
 
 end

@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     
+    initializeApplicationSettings()
+    
     let window = UIWindow(frame: UIScreen.main.bounds)
     self.window = window
     
@@ -23,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     coordinator?.start()
         
     return true
+  }
+  
+  private func initializeApplicationSettings() {
+    ApplicatinSettings.shared.configure()
   }
 
 }

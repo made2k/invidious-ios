@@ -17,5 +17,7 @@ target 'InvidousApp' do
   
   pod 'MaterialComponents/Tabs'
   pod 'R.swift', '~> 5.0'
+  pod 'RxRelay', '~> 5.0'
+  pod 'RxSwift', '~> 5.0'
 
 end

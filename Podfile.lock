@@ -38,6 +38,9 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
   - Version (0.7.0)
 
 DEPENDENCIES:
@@ -47,6 +50,8 @@ DEPENDENCIES:
   - ObjectMapper (~> 3.4)
   - PromiseKit (~> 6.8)
   - R.swift (~> 5.0)
+  - RxRelay (~> 5.0)
+  - RxSwift (~> 5.0)
   - Version (~> 0)
 
 SPEC REPOS:
@@ -59,6 +64,8 @@ SPEC REPOS:
     - PromiseKit
     - R.swift
     - R.swift.Library
+    - RxRelay
+    - RxSwift
     - Version
 
 SPEC CHECKSUMS:
@@ -70,8 +77,10 @@ SPEC CHECKSUMS:
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   Version: 748646b64528b12654498912dc3bd065867169cc
 
-PODFILE CHECKSUM: ebc4f7464199ae3a23252273db788a200a6b7cf6
+PODFILE CHECKSUM: 950cea6172395422884af8e5537a2e5b5859f13f
 
 COCOAPODS: 1.6.1

@@ -43,6 +43,10 @@
 		92DD7062228527CF00CA1FD6 /* Invidious+Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD7061228527CF00CA1FD6 /* Invidious+Comments.swift */; };
 		92DD70642285284D00CA1FD6 /* CommentSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD70632285284D00CA1FD6 /* CommentSort.swift */; };
 		92DD70662285286500CA1FD6 /* CommentSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD70652285286500CA1FD6 /* CommentSource.swift */; };
+		92DD706B22852B3C00CA1FD6 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD706A22852B3C00CA1FD6 /* Channel.swift */; };
+		92DD706D22852CA200CA1FD6 /* ChannelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD706C22852CA200CA1FD6 /* ChannelPreview.swift */; };
+		92DD706F22852D0000CA1FD6 /* Invidious+Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD706E22852D0000CA1FD6 /* Invidious+Channels.swift */; };
+		92DD707222852E4300CA1FD6 /* ChannelSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD707122852E4300CA1FD6 /* ChannelSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,10 @@
 		92DD7061228527CF00CA1FD6 /* Invidious+Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invidious+Comments.swift"; sourceTree = "<group>"; };
 		92DD70632285284D00CA1FD6 /* CommentSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSort.swift; sourceTree = "<group>"; };
 		92DD70652285286500CA1FD6 /* CommentSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentSource.swift; sourceTree = "<group>"; };
+		92DD706A22852B3C00CA1FD6 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		92DD706C22852CA200CA1FD6 /* ChannelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPreview.swift; sourceTree = "<group>"; };
+		92DD706E22852D0000CA1FD6 /* Invidious+Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invidious+Channels.swift"; sourceTree = "<group>"; };
+		92DD707122852E4300CA1FD6 /* ChannelSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSort.swift; sourceTree = "<group>"; };
 		FC54D3F464D4FFFF6C6BD83A /* Pods_API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -194,6 +202,7 @@
 		9279CD2A2283B56B001D41FA /* Schema */ = {
 			isa = PBXGroup;
 			children = (
+				92DD706922852ADF00CA1FD6 /* Channel */,
 				92DD705A228524A700CA1FD6 /* Comment */,
 				92BF9F7D2284CAAB0060CB4F /* Caption */,
 				92BF9F722284ABB60060CB4F /* Genre */,
@@ -247,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				92BF9F682284A1260060CB4F /* Invidious.swift */,
+				92DD706E22852D0000CA1FD6 /* Invidious+Channels.swift */,
 				92DD7061228527CF00CA1FD6 /* Invidious+Comments.swift */,
 				92BF9F6A2284A24E0060CB4F /* Invidious+Stats.swift */,
 				92BF9F782284C00D0060CB4F /* Invidios+Subscriptions.swift */,
@@ -338,6 +348,24 @@
 			children = (
 				92DD70632285284D00CA1FD6 /* CommentSort.swift */,
 				92DD70652285286500CA1FD6 /* CommentSource.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		92DD706922852ADF00CA1FD6 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				92DD707022852E3300CA1FD6 /* Parameters */,
+				92DD706A22852B3C00CA1FD6 /* Channel.swift */,
+				92DD706C22852CA200CA1FD6 /* ChannelPreview.swift */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		92DD707022852E3300CA1FD6 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				92DD707122852E4300CA1FD6 /* ChannelSort.swift */,
 			);
 			path = Parameters;
 			sourceTree = "<group>";
@@ -559,8 +587,11 @@
 				9279CD2F2283BCE2001D41FA /* Software.swift in Sources */,
 				92BF9F6322849D660060CB4F /* VideoPreview.swift in Sources */,
 				9279CD3B2283CAFA001D41FA /* Video.swift in Sources */,
+				92DD707222852E4300CA1FD6 /* ChannelSort.swift in Sources */,
 				92BF9F772284BDD80060CB4F /* Subscription.swift in Sources */,
+				92DD706D22852CA200CA1FD6 /* ChannelPreview.swift in Sources */,
 				9279CD2C2283B5B1001D41FA /* Statistic.swift in Sources */,
+				92DD706B22852B3C00CA1FD6 /* Channel.swift in Sources */,
 				92BF9F692284A1260060CB4F /* Invidious.swift in Sources */,
 				9279CD342283BD5A001D41FA /* Metadata.swift in Sources */,
 				9279CD412283CD4A001D41FA /* AdaptiveFormat.swift in Sources */,
@@ -569,6 +600,7 @@
 				9279CD452283CDC8001D41FA /* Caption.swift in Sources */,
 				92BF9F742284ABC20060CB4F /* Genre.swift in Sources */,
 				9279CD3D2283CB39001D41FA /* VideoThumbnail.swift in Sources */,
+				92DD706F22852D0000CA1FD6 /* Invidious+Channels.swift in Sources */,
 				9279CD322283BD24001D41FA /* Usage.swift in Sources */,
 				92DD705C228525B200CA1FD6 /* CommentTree.swift in Sources */,
 				9279CD382283BE48001D41FA /* VersionTransform.swift in Sources */,

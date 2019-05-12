@@ -11,9 +11,9 @@
 		81D5A7520A850BB76FD5B8DA /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC54D3F464D4FFFF6C6BD83A /* Pods_API.framework */; };
 		9248261C2288691C00FFBED7 /* VideoPreviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */; };
 		9248262022886AC500FFBED7 /* VideoPreviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */; };
-		9248262222886B1300FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262122886B1200FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift */; };
+		9248262222886B1300FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262122886B1200FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift */; };
 		9248262422886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262322886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift */; };
-		9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift */; };
+		9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASCollectionDelegate.swift */; };
 		924826282288716C00FFBED7 /* VideoPreviewList.strings in Resources */ = {isa = PBXBuildFile; fileRef = 924826272288716C00FFBED7 /* VideoPreviewList.strings */; };
 		9248262B2288765800FFBED7 /* VideoListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262A2288765800FFBED7 /* VideoListCoordinator.swift */; };
 		9248262E228878BC00FFBED7 /* HomeTabs.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9248262D228878BC00FFBED7 /* HomeTabs.strings */; };
@@ -117,9 +117,9 @@
 		8246E33F7EA5EC64398EE174 /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
 		9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewRequest.swift; sourceTree = "<group>"; };
 		9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewListViewController.swift; sourceTree = "<group>"; };
-		9248262122886B1200FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPReviewListViewController+ASTableDataSource.swift"; sourceTree = "<group>"; };
+		9248262122886B1200FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASCollectionDataSource.swift"; sourceTree = "<group>"; };
 		9248262322886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASBatchFetchingDelegate.swift"; sourceTree = "<group>"; };
-		9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASTableDelegate.swift"; sourceTree = "<group>"; };
+		9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASCollectionDelegate.swift"; sourceTree = "<group>"; };
 		924826272288716C00FFBED7 /* VideoPreviewList.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = VideoPreviewList.strings; sourceTree = "<group>"; };
 		9248262A2288765800FFBED7 /* VideoListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCoordinator.swift; sourceTree = "<group>"; };
 		9248262D228878BC00FFBED7 /* HomeTabs.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeTabs.strings; sourceTree = "<group>"; };
@@ -249,8 +249,8 @@
 			children = (
 				9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */,
 				9248262322886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift */,
-				9248262122886B1200FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift */,
-				9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift */,
+				9248262122886B1200FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift */,
+				9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASCollectionDelegate.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -798,7 +798,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/InvidousApp/Application/Assets/R.generated.swift",
+				$SRCROOT/InvidousApp/Application/Assets/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -889,7 +889,7 @@
 			files = (
 				924B0D6A228666B9009C6117 /* VideoPreviewCellNode.swift in Sources */,
 				924B0D6222865903009C6117 /* Backend.swift in Sources */,
-				9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift in Sources */,
+				9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASCollectionDelegate.swift in Sources */,
 				92B2E3AE22860D8A00D5245C /* UIColor+Hex.swift in Sources */,
 				924D4F9122873A8600267B7E /* UInt+Formatting.swift in Sources */,
 				9248261C2288691C00FFBED7 /* VideoPreviewRequest.swift in Sources */,
@@ -901,7 +901,7 @@
 				92B2E3B32286189100D5245C /* R.generated.swift in Sources */,
 				92B2E3B62286220900D5245C /* ApplicationSettings.swift in Sources */,
 				92B2E3A822860B5800D5245C /* Coordinator.swift in Sources */,
-				9248262222886B1300FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift in Sources */,
+				9248262222886B1300FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift in Sources */,
 				9248262022886AC500FFBED7 /* VideoPreviewListViewController.swift in Sources */,
 				9248262B2288765800FFBED7 /* VideoListCoordinator.swift in Sources */,
 				9279CD072283B426001D41FA /* AppDelegate.swift in Sources */,

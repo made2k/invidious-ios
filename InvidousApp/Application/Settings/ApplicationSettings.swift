@@ -1,5 +1,5 @@
 //
-//  ApplicatinSettings.swift
+//  ApplicationSettings.swift
 //  InvidousApp
 //
 //  Created by Zach McGaughey on 5/10/19.
@@ -10,11 +10,11 @@ import Foundation
 import RxRelay
 import RxSwift
 
-final class ApplicatinSettings: NSObject {
+final class ApplicationSettings: NSObject {
   
   // MARK: - Static
   
-  static let shared = ApplicatinSettings()
+  static let shared = ApplicationSettings()
   
   private static func registerDefaults() {
     
@@ -32,15 +32,15 @@ final class ApplicatinSettings: NSObject {
   private let defaults = UserDefaults.standard
   private let disposeBag = DisposeBag()
   
-  let invidiousInstance: BehaviorRelay<URL?>
+  let invidiousInstance: BehaviorRelay<URL>
   
   // MARK: - Initialization
   
   func configure() { }
 
   private override init() {
-    ApplicatinSettings.registerDefaults()
-    invidiousInstance = BehaviorRelay<URL?>(value: defaults.url(forKey: Keys.invidiousInstanceKey))
+    ApplicationSettings.registerDefaults()
+    invidiousInstance = BehaviorRelay<URL>(value: defaults.url(forKey: Keys.invidiousInstanceKey).unsafelyUnwrapped)
 
     super.init()
     
@@ -56,9 +56,7 @@ final class ApplicatinSettings: NSObject {
     Observable.combineLatest(invidiousInstance, Observable.just(Keys.invidiousInstanceKey))
       .skip(1)
       .subscribe(onNext: {
-        $0.0 != nil ?
-          defaults.set($0.0, forKey: $0.1) :
-          defaults.removeObject(forKey: $0.1)
+          defaults.set($0.0, forKey: $0.1)
       }).disposed(by: disposeBag)
     
   }

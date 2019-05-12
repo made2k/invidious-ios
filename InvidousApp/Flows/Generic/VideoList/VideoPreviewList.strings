@@ -1,0 +1,9 @@
+/* 
+  VideoPreviewList.strings
+  InvidousApp
+
+  Created by Zach McGaughey on 5/12/19.
+  Copyright © 2019 Zach McGaughey. All rights reserved.
+*/
+
+"Error loading videos" = "There was an error loading videos.";

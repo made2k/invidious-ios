@@ -9,8 +9,21 @@
 /* Begin PBXBuildFile section */
 		5004DDFC8A2D4D4ABF5EBA1F /* Pods_InvidousApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8083BCBE29F108163FFDFDEA /* Pods_InvidousApp.framework */; };
 		81D5A7520A850BB76FD5B8DA /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC54D3F464D4FFFF6C6BD83A /* Pods_API.framework */; };
+		9248261C2288691C00FFBED7 /* VideoPreviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */; };
+		9248262022886AC500FFBED7 /* VideoPreviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */; };
+		9248262222886B1300FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262122886B1200FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift */; };
+		9248262422886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262322886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift */; };
+		9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift */; };
+		924826282288716C00FFBED7 /* VideoPreviewList.strings in Resources */ = {isa = PBXBuildFile; fileRef = 924826272288716C00FFBED7 /* VideoPreviewList.strings */; };
+		9248262B2288765800FFBED7 /* VideoListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262A2288765800FFBED7 /* VideoListCoordinator.swift */; };
+		9248262E228878BC00FFBED7 /* HomeTabs.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9248262D228878BC00FFBED7 /* HomeTabs.strings */; };
+		924B0D6022865887009C6117 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D5F22865887009C6117 /* AppModel.swift */; };
+		924B0D6222865903009C6117 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D6122865903009C6117 /* Backend.swift */; };
+		924B0D6622865CF8009C6117 /* VideoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D6522865CF8009C6117 /* VideoListModel.swift */; };
+		924B0D6A228666B9009C6117 /* VideoPreviewCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D69228666B9009C6117 /* VideoPreviewCellNode.swift */; };
+		924D4F8E2287370B00267B7E /* AuthorThumbnailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D4F8D2287370B00267B7E /* AuthorThumbnailNode.swift */; };
+		924D4F9122873A8600267B7E /* UInt+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924D4F9022873A8600267B7E /* UInt+Formatting.swift */; };
 		9279CD072283B426001D41FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279CD062283B426001D41FA /* AppDelegate.swift */; };
-		9279CD092283B426001D41FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279CD082283B426001D41FA /* ViewController.swift */; };
 		9279CD0E2283B428001D41FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9279CD0D2283B428001D41FA /* Assets.xcassets */; };
 		9279CD112283B428001D41FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9279CD0F2283B428001D41FA /* LaunchScreen.storyboard */; };
 		9279CD212283B558001D41FA /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = 9279CD1F2283B558001D41FA /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +41,8 @@
 		9279CD432283CD8F001D41FA /* FormatStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279CD422283CD8F001D41FA /* FormatStream.swift */; };
 		9279CD452283CDC8001D41FA /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279CD442283CDC8001D41FA /* Caption.swift */; };
 		9279CD492283CF4D001D41FA /* RecommendedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279CD482283CF4D001D41FA /* RecommendedVideo.swift */; };
+		9296949822866D790042971D /* VideoThumbnailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296949722866D790042971D /* VideoThumbnailNode.swift */; };
+		9296949C22866EAA0042971D /* TextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9296949B22866EAA0042971D /* TextNode.swift */; };
 		92B2E3812285CF2700D5245C /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3802285CF2700D5245C /* Playlist.swift */; };
 		92B2E3832285CF4500D5245C /* VideoSnippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3822285CF4500D5245C /* VideoSnippet.swift */; };
 		92B2E3852285D09F00D5245C /* ChannelPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3842285D09F00D5245C /* ChannelPlaylist.swift */; };
@@ -49,7 +64,7 @@
 		92B2E3AC22860CF100D5245C /* UIColor+YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3AB22860CF100D5245C /* UIColor+YouTube.swift */; };
 		92B2E3AE22860D8A00D5245C /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3AD22860D8A00D5245C /* UIColor+Hex.swift */; };
 		92B2E3B32286189100D5245C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3B22286189100D5245C /* R.generated.swift */; };
-		92B2E3B62286220900D5245C /* ApplicatinSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3B52286220900D5245C /* ApplicatinSettings.swift */; };
+		92B2E3B62286220900D5245C /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2E3B52286220900D5245C /* ApplicationSettings.swift */; };
 		92BF9F6322849D660060CB4F /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF9F6222849D660060CB4F /* VideoPreview.swift */; };
 		92BF9F692284A1260060CB4F /* Invidious.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF9F682284A1260060CB4F /* Invidious.swift */; };
 		92BF9F6B2284A24E0060CB4F /* Invidious+Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BF9F6A2284A24E0060CB4F /* Invidious+Stats.swift */; };
@@ -100,9 +115,22 @@
 		511FE1FF666F5BD67144645F /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
 		8083BCBE29F108163FFDFDEA /* Pods_InvidousApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvidousApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8246E33F7EA5EC64398EE174 /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
+		9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewRequest.swift; sourceTree = "<group>"; };
+		9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewListViewController.swift; sourceTree = "<group>"; };
+		9248262122886B1200FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPReviewListViewController+ASTableDataSource.swift"; sourceTree = "<group>"; };
+		9248262322886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASBatchFetchingDelegate.swift"; sourceTree = "<group>"; };
+		9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASTableDelegate.swift"; sourceTree = "<group>"; };
+		924826272288716C00FFBED7 /* VideoPreviewList.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = VideoPreviewList.strings; sourceTree = "<group>"; };
+		9248262A2288765800FFBED7 /* VideoListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCoordinator.swift; sourceTree = "<group>"; };
+		9248262D228878BC00FFBED7 /* HomeTabs.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeTabs.strings; sourceTree = "<group>"; };
+		924B0D5F22865887009C6117 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		924B0D6122865903009C6117 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
+		924B0D6522865CF8009C6117 /* VideoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListModel.swift; sourceTree = "<group>"; };
+		924B0D69228666B9009C6117 /* VideoPreviewCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewCellNode.swift; sourceTree = "<group>"; };
+		924D4F8D2287370B00267B7E /* AuthorThumbnailNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorThumbnailNode.swift; sourceTree = "<group>"; };
+		924D4F9022873A8600267B7E /* UInt+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt+Formatting.swift"; sourceTree = "<group>"; };
 		9279CD032283B426001D41FA /* InvidousApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvidousApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9279CD062283B426001D41FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9279CD082283B426001D41FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9279CD0D2283B428001D41FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9279CD102283B428001D41FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9279CD122283B428001D41FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +149,8 @@
 		9279CD422283CD8F001D41FA /* FormatStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatStream.swift; sourceTree = "<group>"; };
 		9279CD442283CDC8001D41FA /* Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
 		9279CD482283CF4D001D41FA /* RecommendedVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedVideo.swift; sourceTree = "<group>"; };
+		9296949722866D790042971D /* VideoThumbnailNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoThumbnailNode.swift; sourceTree = "<group>"; };
+		9296949B22866EAA0042971D /* TextNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNode.swift; sourceTree = "<group>"; };
 		92B2E3802285CF2700D5245C /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		92B2E3822285CF4500D5245C /* VideoSnippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSnippet.swift; sourceTree = "<group>"; };
 		92B2E3842285D09F00D5245C /* ChannelPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPlaylist.swift; sourceTree = "<group>"; };
@@ -142,7 +172,7 @@
 		92B2E3AB22860CF100D5245C /* UIColor+YouTube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+YouTube.swift"; sourceTree = "<group>"; };
 		92B2E3AD22860D8A00D5245C /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		92B2E3B22286189100D5245C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		92B2E3B52286220900D5245C /* ApplicatinSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicatinSettings.swift; sourceTree = "<group>"; };
+		92B2E3B52286220900D5245C /* ApplicationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
 		92BF9F6222849D660060CB4F /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
 		92BF9F682284A1260060CB4F /* Invidious.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invidious.swift; sourceTree = "<group>"; };
 		92BF9F6A2284A24E0060CB4F /* Invidious+Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invidious+Stats.swift"; sourceTree = "<group>"; };
@@ -196,6 +226,68 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9248261D22886A9700FFBED7 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				9248261E22886AA000FFBED7 /* VideoList */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		9248261E22886AA000FFBED7 /* VideoList */ = {
+			isa = PBXGroup;
+			children = (
+				9248262C2288766100FFBED7 /* Coordinator */,
+				924826292288763D00FFBED7 /* ViewController */,
+				924826272288716C00FFBED7 /* VideoPreviewList.strings */,
+			);
+			path = VideoList;
+			sourceTree = "<group>";
+		};
+		924826292288763D00FFBED7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */,
+				9248262322886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift */,
+				9248262122886B1200FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift */,
+				9248262522886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9248262C2288766100FFBED7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9248262A2288765800FFBED7 /* VideoListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		924B0D6422865CC1009C6117 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				924B0D5F22865887009C6117 /* AppModel.swift */,
+				924B0D6522865CF8009C6117 /* VideoListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		924D4F8F22873A7600267B7E /* StandardLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				924D4F9022873A8600267B7E /* UInt+Formatting.swift */,
+			);
+			path = StandardLibrary;
+			sourceTree = "<group>";
+		};
+		924D4F92228868E400267B7E /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
 		9279CCFA2283B426001D41FA = {
 			isa = PBXGroup;
 			children = (
@@ -222,9 +314,12 @@
 				92B2E3AF2286175900D5245C /* Application */,
 				92B2E3A922860CDD00D5245C /* Extensions */,
 				92B2E3A0228603FC00D5245C /* Flows */,
+				924B0D6422865CC1009C6117 /* Models */,
 				92B2E3A622860B3500D5245C /* Protocols */,
+				924D4F92228868E400267B7E /* Types */,
+				9296949522866D540042971D /* UIComponents */,
 				9279CD062283B426001D41FA /* AppDelegate.swift */,
-				9279CD082283B426001D41FA /* ViewController.swift */,
+				924B0D6122865903009C6117 /* Backend.swift */,
 			);
 			path = InvidousApp;
 			sourceTree = "<group>";
@@ -297,6 +392,25 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		9296949522866D540042971D /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				9296949622866D610042971D /* Texture */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		9296949622866D610042971D /* Texture */ = {
+			isa = PBXGroup;
+			children = (
+				924D4F8D2287370B00267B7E /* AuthorThumbnailNode.swift */,
+				9296949B22866EAA0042971D /* TextNode.swift */,
+				924B0D69228666B9009C6117 /* VideoPreviewCellNode.swift */,
+				9296949722866D790042971D /* VideoThumbnailNode.swift */,
+			);
+			path = Texture;
+			sourceTree = "<group>";
+		};
 		92B2E37F2285CF1600D5245C /* Playlist */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,18 +445,20 @@
 		92B2E3A0228603FC00D5245C /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				92B2E3A12286040500D5245C /* Home */,
+				9248261D22886A9700FFBED7 /* Generic */,
+				92B2E3A12286040500D5245C /* HomeTab */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
 		};
-		92B2E3A12286040500D5245C /* Home */ = {
+		92B2E3A12286040500D5245C /* HomeTab */ = {
 			isa = PBXGroup;
 			children = (
-				92B2E3A22286049100D5245C /* HomeTabViewController.swift */,
 				92B2E3A422860B3000D5245C /* HomeCoordinator.swift */,
+				92B2E3A22286049100D5245C /* HomeTabViewController.swift */,
+				9248262D228878BC00FFBED7 /* HomeTabs.strings */,
 			);
-			path = Home;
+			path = HomeTab;
 			sourceTree = "<group>";
 		};
 		92B2E3A622860B3500D5245C /* Protocols */ = {
@@ -356,6 +472,7 @@
 		92B2E3A922860CDD00D5245C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				924D4F8F22873A7600267B7E /* StandardLibrary */,
 				92B2E3AA22860CE500D5245C /* UIKit */,
 			);
 			path = Extensions;
@@ -393,7 +510,7 @@
 		92B2E3B4228621DD00D5245C /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				92B2E3B52286220900D5245C /* ApplicatinSettings.swift */,
+				92B2E3B52286220900D5245C /* ApplicationSettings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -628,6 +745,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9248262E228878BC00FFBED7 /* HomeTabs.strings in Resources */,
+				924826282288716C00FFBED7 /* VideoPreviewList.strings in Resources */,
 				9279CD112283B428001D41FA /* LaunchScreen.storyboard in Resources */,
 				9279CD0E2283B428001D41FA /* Assets.xcassets in Resources */,
 			);
@@ -679,7 +798,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/InvidousApp/Application/Assets/R.generated.swift",
+				$SRCROOT/InvidousApp/Application/Assets/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -718,9 +837,15 @@
 				"${PODS_ROOT}/Target Support Files/Pods-InvidousApp/Pods-InvidousApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
 				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -733,9 +858,15 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -754,15 +885,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924B0D6A228666B9009C6117 /* VideoPreviewCellNode.swift in Sources */,
+				924B0D6222865903009C6117 /* Backend.swift in Sources */,
+				9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASTableDelegate.swift in Sources */,
 				92B2E3AE22860D8A00D5245C /* UIColor+Hex.swift in Sources */,
-				9279CD092283B426001D41FA /* ViewController.swift in Sources */,
+				924D4F9122873A8600267B7E /* UInt+Formatting.swift in Sources */,
+				9248261C2288691C00FFBED7 /* VideoPreviewRequest.swift in Sources */,
+				9296949C22866EAA0042971D /* TextNode.swift in Sources */,
+				9296949822866D790042971D /* VideoThumbnailNode.swift in Sources */,
 				92B2E3A522860B3000D5245C /* HomeCoordinator.swift in Sources */,
+				924B0D6022865887009C6117 /* AppModel.swift in Sources */,
+				924D4F8E2287370B00267B7E /* AuthorThumbnailNode.swift in Sources */,
 				92B2E3B32286189100D5245C /* R.generated.swift in Sources */,
-				92B2E3B62286220900D5245C /* ApplicatinSettings.swift in Sources */,
+				92B2E3B62286220900D5245C /* ApplicationSettings.swift in Sources */,
 				92B2E3A822860B5800D5245C /* Coordinator.swift in Sources */,
+				9248262222886B1300FFBED7 /* VideoPReviewListViewController+ASTableDataSource.swift in Sources */,
+				9248262022886AC500FFBED7 /* VideoPreviewListViewController.swift in Sources */,
+				9248262B2288765800FFBED7 /* VideoListCoordinator.swift in Sources */,
 				9279CD072283B426001D41FA /* AppDelegate.swift in Sources */,
 				92B2E3A32286049100D5245C /* HomeTabViewController.swift in Sources */,
 				92B2E3AC22860CF100D5245C /* UIColor+YouTube.swift in Sources */,
+				924B0D6622865CF8009C6117 /* VideoListModel.swift in Sources */,
+				9248262422886B8F00FFBED7 /* VideoPreviewListViewController+ASBatchFetchingDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

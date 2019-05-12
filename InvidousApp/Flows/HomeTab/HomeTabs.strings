@@ -1,0 +1,12 @@
+/* 
+  HomeTabs.strings
+  InvidousApp
+
+  Created by Zach McGaughey on 5/12/19.
+  Copyright © 2019 Zach McGaughey. All rights reserved.
+*/
+
+"Home" = "Home";
+"Trending" = "Trending";
+"Subscriptions" = "Subscriptions";
+"Library" = "Library";

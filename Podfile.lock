@@ -4,14 +4,61 @@ PODS:
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
   - MaterialComponents/AnimationTiming (84.1.1)
+  - MaterialComponents/AppBar (84.1.1):
+    - MaterialComponents/FlexibleHeader
+    - MaterialComponents/HeaderStackView
+    - MaterialComponents/NavigationBar
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Icons/ic_arrow_back
+    - MaterialComponents/private/UIMetrics
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Typography
+    - MDFInternationalization
+  - MaterialComponents/ButtonBar (84.1.1):
+    - MaterialComponents/Buttons
+    - MaterialComponents/private/Application
+    - MDFInternationalization
+  - MaterialComponents/Buttons (84.1.1):
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/FlexibleHeader (84.1.1):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/UIMetrics
+    - MDFTextAccessibility
+  - MaterialComponents/HeaderStackView (84.1.1)
   - MaterialComponents/Ink (84.1.1):
     - MaterialComponents/private/Math
+  - MaterialComponents/NavigationBar (84.1.1):
+    - MaterialComponents/ButtonBar
+    - MaterialComponents/private/Math
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
   - MaterialComponents/Palettes (84.1.1)
   - MaterialComponents/private/Application (84.1.1)
+  - MaterialComponents/private/Icons/Base (84.1.1)
+  - MaterialComponents/private/Icons/ic_arrow_back (84.1.1):
+    - MaterialComponents/private/Icons/Base
   - MaterialComponents/private/Math (84.1.1)
+  - MaterialComponents/private/UIMetrics (84.1.1):
+    - MaterialComponents/private/Application
+  - MaterialComponents/Ripple (84.1.1):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
   - MaterialComponents/ShadowElevations (84.1.1)
   - MaterialComponents/ShadowLayer (84.1.1):
     - MaterialComponents/ShadowElevations
+  - MaterialComponents/Shapes (84.1.1):
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
   - MaterialComponents/Tabs (84.1.1):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Ink
@@ -25,6 +72,7 @@ PODS:
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
   - ObjectMapper (3.4.2)
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -83,6 +131,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4)
   - AlamofireObjectMapper (~> 5.2)
+  - MaterialComponents/AppBar
   - MaterialComponents/Tabs
   - ObjectMapper (~> 3.4)
   - PromiseKit (~> 6.8)
@@ -100,6 +149,7 @@ SPEC REPOS:
     - AlamofireObjectMapper
     - MaterialComponents
     - MDFInternationalization
+    - MDFTextAccessibility
     - ObjectMapper
     - PINCache
     - PINOperation
@@ -119,6 +169,7 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   MaterialComponents: 85832ad0a4a7c0113f67330fa135b9702aae7f93
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
   PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
@@ -133,6 +184,6 @@ SPEC CHECKSUMS:
   Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
   Version: 748646b64528b12654498912dc3bd065867169cc
 
-PODFILE CHECKSUM: eb81b91b66dbff5b360fba31e8447137b1d47352
+PODFILE CHECKSUM: 6af0186413c32b002c091bf02241b262bd874596
 
 COCOAPODS: 1.6.1

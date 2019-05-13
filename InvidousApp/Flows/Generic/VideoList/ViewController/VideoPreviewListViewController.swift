@@ -29,12 +29,12 @@ class VideoPreviewListViewController: ASViewController<ASCollectionNode> {
 
   // MARK: - Properties
 
-  let model: VideoListModel
+  let model: VideoPreviewModel
   private let flowLayout: UICollectionViewFlowLayout
 
   // MARK: - Initialization
 
-  init(model: VideoListModel, title: String?, image: UIImage?) {
+  init(model: VideoPreviewModel, title: String?, image: UIImage?) {
     self.model = model
 
     let flowLayout = UICollectionViewFlowLayout()

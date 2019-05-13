@@ -52,16 +52,13 @@ final class Backend: NSObject {
       .bind(to: isUserSignedInRelay)
       .disposed(by: disposeBag)
 
-    let newAuthToken = authTokenRelay
-      .skip(1)
-      .share(replay: 1)
-
-    newAuthToken
+    authTokenRelay
       .subscribe(onNext: { [unowned self] in
         self.api.setToken(token: $0)
       }).disposed(by: disposeBag)
 
-    newAuthToken
+    authTokenRelay
+      .skip(1)
       .subscribe(onNext: {
         if let token = $0 {
           Auth.shared.setToken(token, for: self.api.baseInstance)

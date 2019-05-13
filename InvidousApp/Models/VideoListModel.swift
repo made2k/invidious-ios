@@ -13,7 +13,7 @@ import PromiseKit
 /**
  A model used to fetch and store VideoPreview objects.
  */
-final class VideoListModel: NSObject {
+final class VideoListModel: NSObject, VideoPreviewModel {
 
   private let loader: VideoPreviewRequest
   private var continuation: String?

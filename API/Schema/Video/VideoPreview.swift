@@ -44,6 +44,12 @@ public struct VideoPreview: ImmutableMappable {
     
     length = try map.value("lengthSeconds")
     viewCount = try map.value("viewCount")
+
+    do {
+      let test: String = try map.value("author")
+    } catch {
+      print("error")
+    }
     
     author = try map.value("author")
     authorId = try map.value("authorId")

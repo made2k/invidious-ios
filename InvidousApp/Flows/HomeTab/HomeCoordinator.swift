@@ -97,10 +97,11 @@ class HomeCoordinator: NSObject, Coordinator {
       return coordinator.navigation
     }
 
-    let temp = UIViewController()
-    temp.tabBarItem = UITabBarItem(title: R.string.homeTabs.subscriptions(), image: R.image.subscriptions(), tag: 0)
-    temp.view.backgroundColor = .youtubeRed
-    return temp
+    let coordinator = SubscriptionListCoordinator(title: R.string.homeTabs.subscriptions(), icon: R.image.subscriptions())
+    coordinator.start()
+    childCoordinators.append(coordinator)
+
+    return coordinator.navigation
   }
 
   private func createLibrary() -> UIViewController {

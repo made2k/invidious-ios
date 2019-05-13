@@ -22,8 +22,22 @@ public extension Invidious {
     var parameters: Parameters = [:]
     parameters["sort_by"] = sort?.rawValue
     parameters["page"] = page
-    
-    return Alamofire.request(url, parameters: parameters).responseArrayDecodable()
+
+    return firstly {
+      Alamofire.request(url, parameters: parameters).responseArrayDecodable()
+
+    }.map { (videoList: [VideoPreview]) -> [VideoPreview] in
+      var seenIds = Set<String>()
+      var returnValue: [VideoPreview] = []
+      for video in videoList {
+        if seenIds.contains(video.videoId) { continue }
+        seenIds.insert(video.videoId)
+        returnValue.append(video)
+      }
+
+      return returnValue
+    }
+
   }
   
   func getChannelPlaylists(channelId: String, sort: ChannelPlaylistSort, continuation: String? = nil) -> Promise<ChannelPlaylist> {

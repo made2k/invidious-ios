@@ -11,8 +11,14 @@ import Foundation
 
 public final class Invidious: NSObject {
   
-  internal let baseInstance: URL
-  internal var authToken: String?
+  public let baseInstance: URL
+
+  private var cookieStorage: HTTPCookieStorage? {
+    return Alamofire.SessionManager.default.session.configuration.httpCookieStorage
+  }
+  public var isSignedIn: Bool {
+    return cookieStorage?.cookies(for: baseInstance)?.isEmpty == false
+  }
   
   public init(instance: URL) {
     baseInstance = instance

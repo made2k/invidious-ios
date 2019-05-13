@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		5004DDFC8A2D4D4ABF5EBA1F /* Pods_InvidousApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8083BCBE29F108163FFDFDEA /* Pods_InvidousApp.framework */; };
 		81D5A7520A850BB76FD5B8DA /* Pods_API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC54D3F464D4FFFF6C6BD83A /* Pods_API.framework */; };
+		920AC43B2288E8AF0078A845 /* NotSignedInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AC43A2288E8AF0078A845 /* NotSignedInCoordinator.swift */; };
+		920AC43D2288E8C10078A845 /* NotSignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AC43C2288E8C10078A845 /* NotSignedInViewController.swift */; };
+		920AC43F2288E8C90078A845 /* NotSignedIn.xib in Resources */ = {isa = PBXBuildFile; fileRef = 920AC43E2288E8C90078A845 /* NotSignedIn.xib */; };
+		920AC4412288F0620078A845 /* NotSignedIn.strings in Resources */ = {isa = PBXBuildFile; fileRef = 920AC4402288F0620078A845 /* NotSignedIn.strings */; };
+		920AC4462288F1950078A845 /* NotSignedInViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AC4452288F1950078A845 /* NotSignedInViewControllerDelegate.swift */; };
+		920AC44822891BAA0078A845 /* NotSignedInCoordinator+NotSignedInViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920AC44722891BAA0078A845 /* NotSignedInCoordinator+NotSignedInViewControllerDelegate.swift */; };
+		921C575A22891EB30055FADD /* SignInWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C575922891EB30055FADD /* SignInWebViewViewController.swift */; };
+		921C575C2289B66A0055FADD /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C575B2289B66A0055FADD /* Auth.swift */; };
+		921C575E2289CF3E0055FADD /* SignInWebViewViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921C575D2289CF3E0055FADD /* SignInWebViewViewControllerDelegate.swift */; };
 		9248261C2288691C00FFBED7 /* VideoPreviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */; };
 		9248262022886AC500FFBED7 /* VideoPreviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */; };
 		9248262222886B1300FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262122886B1200FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift */; };
@@ -17,6 +26,8 @@
 		924826282288716C00FFBED7 /* VideoPreviewList.strings in Resources */ = {isa = PBXBuildFile; fileRef = 924826272288716C00FFBED7 /* VideoPreviewList.strings */; };
 		9248262B2288765800FFBED7 /* VideoListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9248262A2288765800FFBED7 /* VideoListCoordinator.swift */; };
 		9248262E228878BC00FFBED7 /* HomeTabs.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9248262D228878BC00FFBED7 /* HomeTabs.strings */; };
+		924AB0202289D149003F7651 /* WKHTTPCookieStore+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AB01F2289D149003F7651 /* WKHTTPCookieStore+Promise.swift */; };
+		924AB0222289D23A003F7651 /* NotSignedInCoordinator+SignInWebViewViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924AB0212289D23A003F7651 /* NotSignedInCoordinator+SignInWebViewViewControllerDelegate.swift */; };
 		924B0D6022865887009C6117 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D5F22865887009C6117 /* AppModel.swift */; };
 		924B0D6222865903009C6117 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D6122865903009C6117 /* Backend.swift */; };
 		924B0D6622865CF8009C6117 /* VideoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B0D6522865CF8009C6117 /* VideoListModel.swift */; };
@@ -115,6 +126,15 @@
 		511FE1FF666F5BD67144645F /* Pods-API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.release.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.release.xcconfig"; sourceTree = "<group>"; };
 		8083BCBE29F108163FFDFDEA /* Pods_InvidousApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InvidousApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8246E33F7EA5EC64398EE174 /* Pods-API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API.debug.xcconfig"; path = "Target Support Files/Pods-API/Pods-API.debug.xcconfig"; sourceTree = "<group>"; };
+		920AC43A2288E8AF0078A845 /* NotSignedInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSignedInCoordinator.swift; sourceTree = "<group>"; };
+		920AC43C2288E8C10078A845 /* NotSignedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSignedInViewController.swift; sourceTree = "<group>"; };
+		920AC43E2288E8C90078A845 /* NotSignedIn.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotSignedIn.xib; sourceTree = "<group>"; };
+		920AC4402288F0620078A845 /* NotSignedIn.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = NotSignedIn.strings; sourceTree = "<group>"; };
+		920AC4452288F1950078A845 /* NotSignedInViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSignedInViewControllerDelegate.swift; sourceTree = "<group>"; };
+		920AC44722891BAA0078A845 /* NotSignedInCoordinator+NotSignedInViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotSignedInCoordinator+NotSignedInViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		921C575922891EB30055FADD /* SignInWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWebViewViewController.swift; sourceTree = "<group>"; };
+		921C575B2289B66A0055FADD /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		921C575D2289CF3E0055FADD /* SignInWebViewViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWebViewViewControllerDelegate.swift; sourceTree = "<group>"; };
 		9248261B2288691C00FFBED7 /* VideoPreviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewRequest.swift; sourceTree = "<group>"; };
 		9248261F22886AC500FFBED7 /* VideoPreviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewListViewController.swift; sourceTree = "<group>"; };
 		9248262122886B1200FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoPreviewListViewController+ASCollectionDataSource.swift"; sourceTree = "<group>"; };
@@ -123,6 +143,8 @@
 		924826272288716C00FFBED7 /* VideoPreviewList.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = VideoPreviewList.strings; sourceTree = "<group>"; };
 		9248262A2288765800FFBED7 /* VideoListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCoordinator.swift; sourceTree = "<group>"; };
 		9248262D228878BC00FFBED7 /* HomeTabs.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = HomeTabs.strings; sourceTree = "<group>"; };
+		924AB01F2289D149003F7651 /* WKHTTPCookieStore+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKHTTPCookieStore+Promise.swift"; sourceTree = "<group>"; };
+		924AB0212289D23A003F7651 /* NotSignedInCoordinator+SignInWebViewViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotSignedInCoordinator+SignInWebViewViewControllerDelegate.swift"; sourceTree = "<group>"; };
 		924B0D5F22865887009C6117 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		924B0D6122865903009C6117 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		924B0D6522865CF8009C6117 /* VideoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListModel.swift; sourceTree = "<group>"; };
@@ -226,6 +248,70 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		920AC4392288E8910078A845 /* NotSignedIn */ = {
+			isa = PBXGroup;
+			children = (
+				920AC4422288F16F0078A845 /* Coordinator */,
+				920AC4442288F1860078A845 /* Protocols */,
+				920AC4432288F1760078A845 /* ViewController */,
+				920AC4402288F0620078A845 /* NotSignedIn.strings */,
+			);
+			path = NotSignedIn;
+			sourceTree = "<group>";
+		};
+		920AC4422288F16F0078A845 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				920AC43A2288E8AF0078A845 /* NotSignedInCoordinator.swift */,
+				920AC44722891BAA0078A845 /* NotSignedInCoordinator+NotSignedInViewControllerDelegate.swift */,
+				924AB0212289D23A003F7651 /* NotSignedInCoordinator+SignInWebViewViewControllerDelegate.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		920AC4432288F1760078A845 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				920AC44922891E710078A845 /* NotSignedInViewController */,
+				921C575822891E970055FADD /* WebView */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		920AC4442288F1860078A845 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				920AC4452288F1950078A845 /* NotSignedInViewControllerDelegate.swift */,
+				921C575D2289CF3E0055FADD /* SignInWebViewViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		920AC44922891E710078A845 /* NotSignedInViewController */ = {
+			isa = PBXGroup;
+			children = (
+				920AC43C2288E8C10078A845 /* NotSignedInViewController.swift */,
+				920AC43E2288E8C90078A845 /* NotSignedIn.xib */,
+			);
+			path = NotSignedInViewController;
+			sourceTree = "<group>";
+		};
+		921C575822891E970055FADD /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				921C575922891EB30055FADD /* SignInWebViewViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		921C575F2289D0E40055FADD /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				924AB01F2289D149003F7651 /* WKHTTPCookieStore+Promise.swift */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
 		9248261D22886A9700FFBED7 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +405,7 @@
 				924D4F92228868E400267B7E /* Types */,
 				9296949522866D540042971D /* UIComponents */,
 				9279CD062283B426001D41FA /* AppDelegate.swift */,
+				921C575B2289B66A0055FADD /* Auth.swift */,
 				924B0D6122865903009C6117 /* Backend.swift */,
 			);
 			path = InvidousApp;
@@ -447,6 +534,7 @@
 			children = (
 				9248261D22886A9700FFBED7 /* Generic */,
 				92B2E3A12286040500D5245C /* HomeTab */,
+				920AC4392288E8910078A845 /* NotSignedIn */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -474,6 +562,7 @@
 			children = (
 				924D4F8F22873A7600267B7E /* StandardLibrary */,
 				92B2E3AA22860CE500D5245C /* UIKit */,
+				921C575F2289D0E40055FADD /* WebKit */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -747,7 +836,9 @@
 			files = (
 				9248262E228878BC00FFBED7 /* HomeTabs.strings in Resources */,
 				924826282288716C00FFBED7 /* VideoPreviewList.strings in Resources */,
+				920AC4412288F0620078A845 /* NotSignedIn.strings in Resources */,
 				9279CD112283B428001D41FA /* LaunchScreen.storyboard in Resources */,
+				920AC43F2288E8C90078A845 /* NotSignedIn.xib in Resources */,
 				9279CD0E2283B428001D41FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -842,8 +933,10 @@
 				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
 				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
@@ -864,8 +957,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
@@ -888,23 +983,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				924B0D6A228666B9009C6117 /* VideoPreviewCellNode.swift in Sources */,
+				921C575A22891EB30055FADD /* SignInWebViewViewController.swift in Sources */,
 				924B0D6222865903009C6117 /* Backend.swift in Sources */,
+				924AB0202289D149003F7651 /* WKHTTPCookieStore+Promise.swift in Sources */,
+				920AC44822891BAA0078A845 /* NotSignedInCoordinator+NotSignedInViewControllerDelegate.swift in Sources */,
+				920AC4462288F1950078A845 /* NotSignedInViewControllerDelegate.swift in Sources */,
 				9248262622886BD600FFBED7 /* VideoPreviewListViewController+ASCollectionDelegate.swift in Sources */,
 				92B2E3AE22860D8A00D5245C /* UIColor+Hex.swift in Sources */,
 				924D4F9122873A8600267B7E /* UInt+Formatting.swift in Sources */,
 				9248261C2288691C00FFBED7 /* VideoPreviewRequest.swift in Sources */,
 				9296949C22866EAA0042971D /* TextNode.swift in Sources */,
 				9296949822866D790042971D /* VideoThumbnailNode.swift in Sources */,
+				921C575C2289B66A0055FADD /* Auth.swift in Sources */,
 				92B2E3A522860B3000D5245C /* HomeCoordinator.swift in Sources */,
+				924AB0222289D23A003F7651 /* NotSignedInCoordinator+SignInWebViewViewControllerDelegate.swift in Sources */,
+				920AC43B2288E8AF0078A845 /* NotSignedInCoordinator.swift in Sources */,
 				924B0D6022865887009C6117 /* AppModel.swift in Sources */,
 				924D4F8E2287370B00267B7E /* AuthorThumbnailNode.swift in Sources */,
 				92B2E3B32286189100D5245C /* R.generated.swift in Sources */,
 				92B2E3B62286220900D5245C /* ApplicationSettings.swift in Sources */,
 				92B2E3A822860B5800D5245C /* Coordinator.swift in Sources */,
 				9248262222886B1300FFBED7 /* VideoPreviewListViewController+ASCollectionDataSource.swift in Sources */,
+				921C575E2289CF3E0055FADD /* SignInWebViewViewControllerDelegate.swift in Sources */,
 				9248262022886AC500FFBED7 /* VideoPreviewListViewController.swift in Sources */,
 				9248262B2288765800FFBED7 /* VideoListCoordinator.swift in Sources */,
 				9279CD072283B426001D41FA /* AppDelegate.swift in Sources */,
+				920AC43D2288E8C10078A845 /* NotSignedInViewController.swift in Sources */,
 				92B2E3A32286049100D5245C /* HomeTabViewController.swift in Sources */,
 				92B2E3AC22860CF100D5245C /* UIColor+YouTube.swift in Sources */,
 				924B0D6622865CF8009C6117 /* VideoListModel.swift in Sources */,

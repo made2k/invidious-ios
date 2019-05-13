@@ -101,9 +101,13 @@ PODS:
   - R.swift (5.0.3):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.1)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - SAMKeychain (1.5.3)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
     - Texture/Core (= 2.8.1)
@@ -132,12 +136,15 @@ DEPENDENCIES:
   - Alamofire (~> 4)
   - AlamofireObjectMapper (~> 5.2)
   - MaterialComponents/AppBar
+  - MaterialComponents/Buttons
   - MaterialComponents/Tabs
   - ObjectMapper (~> 3.4)
   - PromiseKit (~> 6.8)
   - R.swift (~> 5.0)
+  - RxCocoa (~> 5.0)
   - RxRelay (~> 5.0)
   - RxSwift (~> 5.0)
+  - SAMKeychain (~> 1.5)
   - Texture (~> 2.8)
   - Then (~> 2)
   - Toaster (~> 2)
@@ -157,8 +164,10 @@ SPEC REPOS:
     - PromiseKit
     - R.swift
     - R.swift.Library
+    - RxCocoa
     - RxRelay
     - RxSwift
+    - SAMKeychain
     - Texture
     - Then
     - Toaster
@@ -177,13 +186,15 @@ SPEC CHECKSUMS:
   PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
   Toaster: c1a81b376edcc2470157b4d1ee1e9341d3b96455
   Version: 748646b64528b12654498912dc3bd065867169cc
 
-PODFILE CHECKSUM: 6af0186413c32b002c091bf02241b262bd874596
+PODFILE CHECKSUM: de7f34bc9a87757eabc4f5648272979d087f0d55
 
 COCOAPODS: 1.6.1

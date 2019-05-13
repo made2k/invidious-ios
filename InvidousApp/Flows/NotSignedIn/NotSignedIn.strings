@@ -1,0 +1,11 @@
+/* 
+  NotSignedIn.strings
+  InvidousApp
+
+  Created by Zach McGaughey on 5/12/19.
+  Copyright © 2019 Zach McGaughey. All rights reserved.
+*/
+
+"Sign in button" = "SIGN IN";
+"Sign in title" = "You must sign in for this feature to work.";
+"Sign in description" = "By signing in features like subscriptions, and watched videos will be sycned with invidious.";

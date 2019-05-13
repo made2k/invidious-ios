@@ -16,10 +16,13 @@ target 'InvidousApp' do
   use_frameworks!
 
   pod 'MaterialComponents/AppBar'
+  pod 'MaterialComponents/Buttons'
   pod 'MaterialComponents/Tabs'
   pod 'R.swift', '~> 5.0'
+  pod 'RxCocoa', '~> 5.0'
   pod 'RxRelay', '~> 5.0'
   pod 'RxSwift', '~> 5.0'
+  pod 'SAMKeychain', '~> 1.5'
   pod 'Texture', '~> 2.8'
   pod 'Then', '~> 2'
   pod 'Toaster', '~> 2'

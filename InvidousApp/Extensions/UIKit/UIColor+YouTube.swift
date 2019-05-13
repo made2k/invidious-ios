@@ -10,6 +10,7 @@ import UIKit
 
 extension UIColor {
 
+  static let youtubeBlue = UIColor(hex: 0x397af2)
   static let youtubeOffWhite = UIColor(hex: 0xf1f2f4)
   static let youtubeWhite = UIColor(hex: 0xfeffff)
   static let youtubeRed = UIColor.red
